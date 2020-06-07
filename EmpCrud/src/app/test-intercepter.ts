@@ -9,14 +9,14 @@ export class AuthIntercepter implements HttpInterceptor
     constructor(private localstorageService:LocalStorageService){}
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        console.log('In Intercepter');
+       // console.log('In Intercepter');
         var token=this.localstorageService.GetToken();
         
-        if(req.url=='http://localhost:51067/api/login'){
+        if(req.url=='http://localhost/EmpService/api/login'){
 
         
       //  if(token){
-           console.log('Login');
+           console.log('Login Intercept nexthandle ');
             return next.handle(req);
          }
         else{

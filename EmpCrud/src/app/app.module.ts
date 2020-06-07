@@ -9,11 +9,13 @@ import { AuthService } from './auth.service';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthIntercepter } from './test-intercepter';
 import { LocalStorageService } from './local-storage.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

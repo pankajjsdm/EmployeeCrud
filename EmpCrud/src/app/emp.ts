@@ -1,5 +1,5 @@
 export class Emp {
-    ID:number;
-    Name:string;
-    Salary:number;
+    id:number;
+    name:string;
+    salary:number;
 }

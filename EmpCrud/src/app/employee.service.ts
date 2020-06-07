@@ -11,10 +11,11 @@ import { map, catchError } from 'rxjs/operators';
 })
 export class EmployeeService {
   
-  private serviceurl = "http://localhost:51067/api/emps/"; 
+  private serviceurl = "http://localhost/EmpService/Employee"; 
   constructor(private http:HttpClient) { }
 
   getEmployeeAsync():Observable<Emp[]>{
+    console.log("Geet Emp");
     return this.http.get<Emp[]>(this.serviceurl).pipe(
       catchError(this.handleError<Emp[]>('getEmp', []))
     );;

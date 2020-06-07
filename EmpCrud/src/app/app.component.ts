@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Employee Crud By Pankaj Sharma Angular 7';
+  title = 'Employee Application in Angular 7';
 }
